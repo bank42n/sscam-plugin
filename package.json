@@ -1,7 +1,7 @@
 {
-    "name": "scam-plugin",
+    "name": "sectcy",
     "version": "1.0.0",
-    "description": "Add select and copy buttons to section headers.",
+    "description": "The sleekest way to Select & Copy sections, with built-in note merging.",
     "main": "main.js",
     "scripts": {
         "dev": "node esbuild.config.mjs",

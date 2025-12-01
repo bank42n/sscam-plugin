@@ -1,0 +1,52 @@
+/* Container for the buttons */
+.select-section-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Show on hover or if always-show is enabled */
+h1:hover .select-section-container,
+h2:hover .select-section-container,
+h3:hover .select-section-container,
+h4:hover .select-section-container,
+h5:hover .select-section-container,
+h6:hover .select-section-container,
+.cm-header:hover + .select-section-container, /* This selector might be tricky in CM6, let's rely on parent hover if possible, or just the container itself */
+.select-section-container:hover,
+.select-section-container.always-show {
+    opacity: 1;
+}
+
+/* In Live Preview, the widget is inside the line. 
+   We need to ensure the line hover triggers it. 
+   CM6 lines don't have a simple class we can target easily for "header lines" from CSS alone without specific classes added by Obsidian or us.
+   However, the widget is inside the content.
+*/
+.cm-line:hover .select-section-container {
+    opacity: 1;
+}
+
+
+/* Button styling */
+.select-section-btn {
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+}
+
+.select-section-btn:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+}
+
+.select-section-btn svg {
+    width: 16px;
+    height: 16px;
+}

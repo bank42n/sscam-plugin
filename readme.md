@@ -1,10 +1,10 @@
-# Obsidian Select Section
+# Obsidian Select and Copy Section
 
 This plugin adds "Select" and "Copy" buttons to your section headers in Obsidian, allowing you to quickly select or copy the entire content of a section (including the header itself, optionally).
 
 ## Features
 
-- **Select Section**: Click the pointer icon to select the text of the entire section.
+- **Select and Copy Section**: Click the pointer icon to select the text of the entire section.
 - **Copy Section**: Click the copy icon to copy the section text to your clipboard.
 - **Configurable**:
     - **Always Show Icons**: Choose to always show the icons or only show them on hover.
@@ -18,7 +18,7 @@ This plugin adds "Select" and "Copy" buttons to your section headers in Obsidian
 1.  Download the latest release from the Releases page.
 2.  Extract the `main.js`, `manifest.json`, and `styles.css` files to your vault's plugin folder: `<VaultFolder>/.obsidian/plugins/obsidian-select-section/`.
 3.  Reload Obsidian.
-4.  Enable "Select Section" in **Settings > Community Plugins**.
+4.  Enable "Select and Copy Section" in **Settings > Community Plugins**.
 
 ## Usage
 
@@ -36,3 +36,7 @@ This plugin adds "Select" and "Copy" buttons to your section headers in Obsidian
 ## License
 
 MIT
+
+## Author
+
+[BANK42n](https://github.com/bank42n)

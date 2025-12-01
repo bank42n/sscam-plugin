@@ -71,7 +71,7 @@ export default class SelectSectionPlugin extends Plugin {
         if (this.settings.showSelectButton) {
             const selectBtn = container.createSpan({ cls: "select-section-btn" });
             setIcon(selectBtn, "mouse-pointer-click");
-            selectBtn.ariaLabel = "Select Section";
+            selectBtn.ariaLabel = "Select and Copy Section";
             selectBtn.onclick = (e) => {
                 e.stopPropagation();
                 this.handleSelect(header, context);
@@ -240,7 +240,7 @@ class SelectSectionWidget extends WidgetType {
         if (this.plugin.settings.showSelectButton) {
             const selectBtn = container.createSpan({ cls: "select-section-btn" });
             setIcon(selectBtn, "mouse-pointer-click");
-            selectBtn.ariaLabel = "Select Section";
+            selectBtn.ariaLabel = "Select and Copy Section";
             selectBtn.onclick = (e) => {
                 e.stopPropagation(); // Prevent cursor movement
                 const markdownView = this.plugin.app.workspace.getActiveViewOfType(MarkdownView);
@@ -280,7 +280,7 @@ class SelectSectionSettingTab extends PluginSettingTab {
 
         containerEl.empty();
 
-        containerEl.createEl('h2', { text: 'Select Section Settings' });
+        containerEl.createEl('h2', { text: 'Select and Copy Section Settings' });
 
         new Setting(containerEl)
             .setName('Always Show Icons')

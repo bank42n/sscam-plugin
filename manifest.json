@@ -1,6 +1,6 @@
 {
     "id": "obsidian-select-section",
-    "name": "Select Section",
+    "name": "Select and Copy Section",
     "version": "1.0.2",
     "minAppVersion": "0.15.0",
     "description": "Add select and copy buttons to section headers.",
